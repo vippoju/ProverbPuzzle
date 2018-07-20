@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#index.html">Home</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid text-center">
+    <div class="row content">
+      <div class="col-sm-1 sidenav">
+      </div>
+      <div class="col-sm-10 text-left">
+        <h1>Proverb Puzzle</h1>
+        <hr>
+        <div id="instructions">
+          <p> Instructions: To play this game, you can reveal no more than half of the characters of each proverb before make a guess. The more characters you left un-flipped before you make a correct guess, the more scores you will be awarded.
+          </p>
+          <hr>
+        </div>
+        <div id="clickCountsDisplay">
+          <table style="border-collapse: collapse; border: none;">
+            <tr style="border: none;">
+              <td style="border: none;">
+                <h4>Clicks Left : </h4> </td>
+              <td style="border: none;">
+                <h4><div id="clickCounts"></div></h4>
+              </td>
+            </tr>
+          </table>
+
+        </div>
+        <div id="note"></div>
+
+        <table>
+          <tr>
+            <td id="1" onclick="flip(1)"></td>
+            <td id="2" onclick="flip(2)"></td>
+            <td id="3" onclick="flip(3)"></td>
+            <td id="4" onclick="flip(4)"></td>
+            <td id="5" onclick="flip(5)"></td>
+            <td id="6" onclick="flip(6)"></td>
+            <td id="7" onclick="flip(7)"></td>
+            <td id="8" onclick="flip(8)"></td>
+            <td id="9" onclick="flip(9)"></td>
+            <td id="10" onclick="flip(10)"></td>
+            <td id="11" onclick="flip(11)"></td>
+            <td id="12" onclick="flip(12)"></td>
+            <td id="13" onclick="flip(13)"></td>
+            <td id="14" onclick="flip(14)"></td>
+            <td id="15" onclick="flip(15)"></td>
+            <td id="16" onclick="flip(16)"></td>
+            <td id="17" onclick="flip(17)"></td>
+            <td id="18" onclick="flip(18)"></td>
+            <td id="19" onclick="flip(19)"></td>
+            <td id="20" onclick="flip(20)"></td>
+            <td id="21" onclick="flip(21)"></td>
+            <td id="22" onclick="flip(22)"></td>
+            <td id="23" onclick="flip(23)"></td>
+            <td id="24" onclick="flip(24)"></td>
+            <td id="25" onclick="flip(25)"></td>
+            <td id="26" onclick="flip(26)"></td>
+            <td id="27" onclick="flip(27)"></td>
+            <td id="28" onclick="flip(28)"></td>
+            <td id="29" onclick="flip(29)"></td>
+            <td id="30" onclick="flip(30)"></td>
+            <td id="31" onclick="flip(31)"></td>
+            <td id="32" onclick="flip(32)"></td>
+            <td id="33" onclick="flip(33)"></td>
+            <td id="34" onclick="flip(34)"></td>
+            <td id="35" onclick="flip(35)"></td>
+            <td id="36" onclick="flip(36)"></td>
+            <td id="37" onclick="flip(37)"></td>
+            <td id="38" onclick="flip(38)"></td>
+            <td id="39" onclick="flip(39)"></td>
+            <td id="40" onclick="flip(40)"></td>
+            <td id="41" onclick="flip(41)"></td>
+            <td id="42" onclick="flip(42)"></td>
+            <td id="43" onclick="flip(43)"></td>
+            <td id="44" onclick="flip(44)"></td>
+            <td id="45" onclick="flip(45)"></td>
+            <td id="46" onclick="flip(46)"></td>
+            <td id="47" onclick="flip(47)"></td>
+            <td id="48" onclick="flip(48)"></td>
+            <td id="49" onclick="flip(49)"></td>
+            <td id="50" onclick="flip(50)"></td>
+          </tr>
+          <tr>
+            <td id="51" onclick="flip(51)"></td>
+            <td id="52" onclick="flip(52)"></td>
+            <td id="53" onclick="flip(53)"></td>
+            <td id="54" onclick="flip(54)"></td>
+            <td id="55" onclick="flip(55)"></td>
+            <td id="56" onclick="flip(56)"></td>
+            <td id="57" onclick="flip(57)"></td>
+            <td id="58" onclick="flip(58)"></td>
+            <td id="59" onclick="flip(59)"></td>
+            <td id="60" onclick="flip(60)"></td>
+            <td id="61" onclick="flip(61)"></td>
+            <td id="62" onclick="flip(62)"></td>
+            <td id="63" onclick="flip(63)"></td>
+            <td id="64" onclick="flip(64)"></td>
+            <td id="65" onclick="flip(65)"></td>
+            <td id="66" onclick="flip(66)"></td>
+            <td id="67" onclick="flip(67)"></td>
+            <td id="68" onclick="flip(68)"></td>
+            <td id="69" onclick="flip(69)"></td>
+            <td id="70" onclick="flip(70)"></td>
+            <td id="71" onclick="flip(71)"></td>
+            <td id="72" onclick="flip(72)"></td>
+            <td id="73" onclick="flip(73)"></td>
+            <td id="74" onclick="flip(74)"></td>
+            <td id="75" onclick="flip(75)"></td>
+            <td id="76" onclick="flip(76)"></td>
+            <td id="77" onclick="flip(77)"></td>
+            <td id="78" onclick="flip(78)"></td>
+            <td id="79" onclick="flip(79)"></td>
+            <td id="80" onclick="flip(80)"></td>
+            <td id="81" onclick="flip(81)"></td>
+            <td id="82" onclick="flip(82)"></td>
+            <td id="83" onclick="flip(83)"></td>
+            <td id="84" onclick="flip(84)"></td>
+            <td id="85" onclick="flip(85)"></td>
+            <td id="86" onclick="flip(86)"></td>
+            <td id="87" onclick="flip(87)"></td>
+            <td id="88" onclick="flip(88)"></td>
+            <td id="89" onclick="flip(89)"></td>
+            <td id="90" onclick="flip(90)"></td>
+            <td id="91" onclick="flip(91)"></td>
+            <td id="92" onclick="flip(92)"></td>
+            <td id="93" onclick="flip(93)"></td>
+            <td id="94" onclick="flip(94)"></td>
+            <td id="95" onclick="flip(95)"></td>
+            <td id="96" onclick="flip(96)"></td>
+            <td id="97" onclick="flip(97)"></td>
+            <td id="98" onclick="flip(98)"></td>
+            <td id="99" onclick="flip(99)"></td>
+            <td id="100" onclick="flip(100)"></td>
+          </tr>
+        </table>
+        <br/>
+        <p id="revealNote"></p><br/><br/>
+        <div class="form-group">
+          <p id="Actions">
+            <button type="button" onclick="guess()">Make your guess NOW</button>
+          </p>
+        </div>
+      </div>
+      <div class="row content">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10">
+          <p id="Result"></p>
+          <br/>
+          <p id="PlayAgain"></p>
+          <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-dialog-centered">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <span class="glyphicon glyphicon-info-sign"></span> <strong>Info Message</strong>
+        </div>
+        <div class="modal-body">
+          <p id="modaltext"></p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+        </div>
+        <div class="col-sm-1"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="container-fluid text-center">
+  </footer>
+
+</body>
+
+</html>

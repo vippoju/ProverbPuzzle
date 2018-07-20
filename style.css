@@ -1,0 +1,87 @@
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+.row.content {
+  height: 550px
+}
+
+.sidenav {
+  padding-top: 20px;
+  background-color: #f1f1f1;
+  height: 100%;
+}
+
+footer {
+  background-color: #555;
+  color: white;
+  padding: 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .sidenav {
+    height: auto;
+    padding: 15px;
+  }
+  .row.content {
+    height: auto;
+  }
+}
+
+.tablecontent {
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: center;
+}
+
+table {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  border: 2px solid black;
+}
+
+td {
+  border: 1px solid #999;
+  padding: 0.75rem;
+}
+
+.playAgaintext {
+  font-family: Gabriola;
+  font-size: 28px;
+  text-align: center;
+  color: blue;
+}
+
+.checked {
+  color: orange;
+}
+
+span.tab{
+    padding: 0 80px; 
+}
+
+.fa.fa-star {
+  font-size: 40px;
+  border: 1px solid #00000;
+}
+
+.modal-header {
+    color:#fff;
+    padding:9px 15px;
+    border-bottom:1px solid #eee;
+    background-color: #5bc0de;
+    text-align : left;
+}
+
+.modal-body{
+  text-align :left;
+  
+}
+
+.successmessage {
+  font-family: Forte;
+  font-size: 38px;
+  text-align: center;
+  color: green;
+}
